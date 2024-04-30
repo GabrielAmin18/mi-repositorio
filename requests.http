@@ -1,0 +1,32 @@
+
+//postear
+###
+POST http://localhost:3000/api/users HTTP/1.1
+Content-Type: application/json
+{
+    "name": "Matias Robledo",
+    "age": 43,
+    "email":"matiroledo@gmail.com"
+}
+//mostrar lista
+###
+GET http://localhost:3000/api/users HTTP/1.1
+
+//buscar por id
+###
+GET http://localhost:3000/api/users/6630615578f232866b5247a4 HTTP/1.1
+
+//modificar id
+###
+PUT  http://localhost:3000/api/users/6630615578f232866b5247a4 HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Matias Rulos",
+    "age": 33,
+    "email":"Matiasrey@gmail.com"
+}
+
+//eliminar 
+###
+DELETE  http://localhost:3000/api/users/6630615578f232866b5247a4 HTTP/1.1
